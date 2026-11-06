@@ -1,0 +1,273 @@
+:root{--ink:#18243b;--muted:#7b8799;--accent:#5268e8;--line:#e8edf4;--bg:#f6f8fc;--good:#178768;--danger:#d34e5a;--white:#fff}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.app{display:flex;min-height:100vh}.sidebar{position:sticky;top:0;width:256px;flex-shrink:0;height:100vh;background:#fff;border-right:1px solid var(--line);padding:28px 16px;display:flex;flex-direction:column;z-index:3}.brand{display:flex;gap:12px;align-items:center;padding:0 12px;font-size:21px;font-weight:800;letter-spacing:-1px}.brand-mark{display:grid;place-items:center;background:var(--accent);color:#fff;width:39px;height:39px;border-radius:12px;font-size:25px}.brand-accent{color:var(--accent)}.brand small{display:block;font-size:9px;font-weight:700;letter-spacing:2px;color:#a2acba}.school{margin-top:37px;border:1px solid var(--line);border-radius:13px;padding:11px;display:flex;align-items:center;gap:10px}.school-icon{display:grid;place-items:center;border-radius:10px;background:#edeffd;color:var(--accent);width:38px;height:38px;font-weight:800}.school strong,.school small{display:block;font-size:12px}.school small{color:var(--muted);margin-top:3px}.nav-label{margin:33px 12px 13px;font-size:10px;font-weight:800;letter-spacing:1.6px;color:#a1a9ba}.nav-item{display:flex;align-items:center;gap:12px;width:100%;padding:12px 13px;margin:3px 0;border:0;border-radius:9px;background:transparent;text-align:left;color:#65748b;font-weight:600;font-size:13px}.nav-item .glyph{font-size:19px;width:23px;text-align:center}.nav-item:hover,.nav-item.active{background:#eff1ff;color:var(--accent)}.side-footer{margin-top:auto;font-size:11px;color:var(--muted);padding:15px 12px;border-top:1px solid var(--line)}.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#21b67f;margin-right:6px}.main-wrap{min-width:0;flex:1}.topbar{height:77px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 39px}.crumb{font-size:13px;color:var(--muted)}.crumb span{padding:0 10px;color:#b9bfcc}.crumb strong{color:var(--ink)}.top-actions{display:flex;align-items:center;gap:14px}.role-label{font-size:12px;color:var(--muted)}select,input,textarea{padding:11px 12px;border:1px solid #dfe5ee;border-radius:9px;background:#fff;color:var(--ink);outline:none}select:focus,input:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px #5268e81a}.avatar{width:34px;height:34px;border-radius:50%;background:#dce8ff;color:#3454b7;font-size:11px;font-weight:800;display:grid;place-items:center}.mobile-menu{display:none;border:0;background:none;font-size:24px}main{max-width:1430px;margin:0 auto;padding:39px}.eyebrow{font-size:12px;font-weight:700;color:var(--accent);margin:0 0 8px}.pagehead{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:29px}.pagehead h1{font-size:27px;letter-spacing:-.8px;margin:0}.pagehead p{font-size:13px;color:var(--muted);margin:8px 0 0}.btn{background:var(--accent);border:1px solid var(--accent);padding:11px 17px;color:white;border-radius:9px;font-size:12px;font-weight:700}.btn:hover{filter:brightness(.95)}.btn.secondary{background:white;color:var(--ink);border-color:var(--line)}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:22px}.panel,.stat{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 3px 18px #27335406}.stat{padding:23px}.stat-label{font-size:12px;color:var(--muted);font-weight:600}.stat-value{font-size:29px;font-weight:800;margin:13px 0 5px}.stat-foot{font-size:11px;color:var(--good)}.two-col{display:grid;grid-template-columns:1.45fr 1fr;gap:20px}.panel{padding:23px;margin-bottom:20px;min-width:0}.panel-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel-title h2{font-size:16px;margin:0}.panel-title small{color:var(--muted)}.item{display:flex;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid var(--line);padding:15px 0}.item:first-of-type{border-top:0}.item strong,.item small{display:block}.item strong{font-size:13px}.item small{font-size:11px;color:var(--muted);margin-top:5px}.time{background:#f0f2ff;color:var(--accent);border-radius:8px;padding:9px;font-size:11px;font-weight:800;white-space:nowrap}.pill{display:inline-block;border-radius:20px;padding:5px 9px;font-size:11px;font-weight:700;background:#ecf4ff;color:#4477bf}.pill.green{background:#e5f7ef;color:#178768}.pill.orange{background:#fff2df;color:#a16c1f}.pill.red{background:#ffebee;color:#b53e4b}.text-button{border:0;background:none;color:var(--accent);font-size:12px;font-weight:700}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:580px}th{text-align:left;color:#8b96a7;font-size:11px;letter-spacing:.3px;font-weight:700;background:#f9fafd}td{font-size:12px}th,td{padding:15px 12px;border-bottom:1px solid var(--line)}tbody tr:hover{background:#fafbff}.empty{color:var(--muted);font-size:13px;padding:25px 0}.form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}.field label{font-size:12px;font-weight:700}.field textarea{resize:vertical;min-height:90px}.progress-track{background:#edf1f7;border-radius:99px;height:8px;overflow:hidden;min-width:100px}.progress-bar{background:var(--accent);height:100%;border-radius:99px}.action-row{display:flex;gap:9px;flex-wrap:wrap}.notice{font-size:12px;color:#655c3a;background:#fff8e7;border:1px solid #f4e2b4;padding:12px 15px;border-radius:9px;margin-bottom:20px}.toast{position:fixed;right:25px;bottom:24px;z-index:10;background:#253451;color:white;padding:13px 19px;border-radius:10px;font-size:13px;box-shadow:0 10px 30px #0002;opacity:0;transform:translateY(15px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translateY(0)}.segment{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 18px}.segment button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;font-size:12px;color:#667488}.segment button.selected{background:#edf0ff;color:var(--accent);border-color:#cad2ff}.muted{color:var(--muted)}.mini-note{font-size:12px;line-height:1.7;color:var(--muted)}@media(max-width:1100px){.stats{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}main{padding:25px}.topbar{padding:0 25px}}@media(max-width:720px){.sidebar{position:fixed;left:-270px;transition:left .2s;box-shadow:5px 0 15px #0001}.sidebar.open{left:0}.mobile-menu{display:block}.crumb{display:none}.topbar{padding:0 17px;height:65px}.role-label{display:none}main{padding:21px 14px}.stats{gap:10px}.stat{padding:17px}.stat-value{font-size:24px}.pagehead h1{font-size:24px}.pagehead{align-items:flex-start}.form-row{grid-template-columns:1fr}.panel{padding:17px}}@media(max-width:400px){.stats{grid-template-columns:1fr 1fr}.top-actions{gap:8px}.avatar{display:none}}
+
+/* Login and account controls */
+[hidden]{display:none!important}
+.login-screen{min-height:100vh;display:grid;place-items:center;padding:25px;background:radial-gradient(circle at 15% 18%,#e7eaff,transparent 42%),radial-gradient(circle at 90% 85%,#edf3ff,transparent 40%),var(--bg)}
+.login-card{width:min(100%,440px);background:#fff;border:1px solid var(--line);border-radius:22px;padding:38px;box-shadow:0 24px 65px #27335412}
+.login-heading{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:800;letter-spacing:-.5px}.login-heading small{display:block;margin-top:3px;color:#a2acba;font-size:9px;letter-spacing:2px}.login-copy{margin:47px 0 28px}.login-copy h1{margin:7px 0;font-size:30px;letter-spacing:-1px}.login-copy p{font-size:13px;color:var(--muted)}.login-card .field{margin-bottom:20px}.login-card .field input{width:100%;padding:14px}.login-submit{width:100%;font-size:14px;padding:14px;margin-top:3px}.login-error{color:#b53e4b;background:#ffebee;border-radius:8px;padding:11px 12px;font-size:12px}.login-disclaimer{margin:30px 0 0;text-align:center;font-size:11px;color:var(--muted)}.signed-in-name{font-size:12px;font-weight:700}.logout-button{white-space:nowrap}@media(max-width:720px){.login-card{padding:26px}.signed-in-name{display:none}.logout-button{padding:9px 11px}}
+/* Dedicated classroom workspace */
+.class-back{margin-bottom:18px}.class-hero{background:linear-gradient(125deg,#293d80,#6479eb);color:white;border-radius:18px;padding:32px 34px;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;min-height:160px}.class-hero .eyebrow{color:#ccd5ff}.class-hero h1{margin:5px 0;font-size:29px;letter-spacing:-.8px}.class-hero p{opacity:.85;margin:8px 0 0;font-size:13px}.class-hero-icon{font-size:54px;font-weight:800;opacity:.24}.class-tabs{display:flex;gap:5px;border-bottom:1px solid var(--line);overflow-x:auto;margin-bottom:22px}.class-tabs button{flex:0 0 auto;border:0;background:transparent;padding:14px 16px;color:#677589;font-weight:700;font-size:12px;border-bottom:3px solid transparent;white-space:nowrap}.class-tabs button.selected{border-color:var(--accent);color:var(--accent)}.class-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:17px}.class-card{border:1px solid var(--line);background:white;box-shadow:0 3px 18px #27335406;border-radius:14px;padding:24px;text-align:left;display:flex;gap:11px;flex-direction:column;min-height:220px;color:var(--ink)}.class-card:hover{border-color:#b5bff9;transform:translateY(-2px);transition:.15s}.class-card-icon{width:48px;height:48px;border-radius:12px;background:#edf0ff;color:var(--accent);display:grid;place-items:center;font-weight:900;font-size:23px}.class-card strong{font-size:17px}.class-card span,.class-card small{font-size:12px;color:var(--muted)}.class-card small{display:flex;justify-content:space-between;margin-top:auto}.class-card b{color:var(--accent)}.new-count{display:inline-grid;place-items:center;background:#ee5d6c;color:white;border-radius:99px;min-width:19px;height:19px;padding:0 5px;font-size:10px;margin-left:5px}.post-meta,.assign-meta{color:var(--muted);font-size:12px;margin-bottom:12px}.post-body{font-size:13px;line-height:1.8;white-space:normal}.file-tile{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;flex-wrap:wrap}.file-tile>div{flex:1;min-width:140px}.file-tile strong,.file-tile small{display:block;font-size:12px;overflow-wrap:anywhere}.file-tile small{color:var(--muted);margin-top:3px}.grade-scroll{max-width:100%;border:1px solid var(--line);border-radius:10px}.grade-table{width:max-content;min-width:100%}.grade-table th,.grade-table td{min-width:130px}.grade-table thead th{height:80px;max-width:210px;white-space:normal;position:sticky;top:0;z-index:1}.grade-table th small{display:block;margin-top:6px}.grade-table .sticky-student{position:sticky;left:0;z-index:2;background:#fff;min-width:185px}.grade-table thead .sticky-student{z-index:3;background:#f9fafd}.grade-cell{width:94px;min-width:0;text-align:center;padding:9px 5px;border:1px solid #d7dff0}.grade-cell:focus{background:#f0f3ff}.attendance-choice{display:flex;gap:5px;flex-wrap:wrap}.attendance-choice button{background:white;border:1px solid var(--line);border-radius:7px;padding:8px 10px;text-transform:capitalize;font-size:11px;color:#5a687d}.attendance-choice button.chosen{font-weight:800;border-color:currentColor}.attendance-choice .present{color:#168663;background:#e4f8ef}.attendance-choice .absent{color:#c54953;background:#ffeded}.attendance-choice .excused{color:#b88626;background:#fff6e2}.attendance-choice .tbc{color:#5c6e8c;background:#eff3f9}.submission-row{background:#f9fafd;border:1px solid var(--line);padding:16px;border-radius:10px;margin-top:12px}.submission-row>div:first-child small{display:block;margin-top:5px;color:var(--muted)}.feedback-area{display:flex;align-items:start;gap:8px;margin-top:12px}.feedback-area textarea{min-height:65px;flex:1}.assignment-upload{border-top:1px solid var(--line);padding-top:18px}.submission-summary{font-size:12px;background:#eef2ff;border-radius:9px;padding:12px}.annotation-result{margin-top:12px;border:1px solid var(--line);padding:12px;border-radius:9px}.annotation-result b{font-size:12px}.annotation-result img{display:block;max-width:100%;max-height:420px;object-fit:contain;margin-top:12px}.modal-backdrop{position:fixed;inset:0;background:#14223bb8;z-index:100;display:grid;place-items:center;padding:20px}.modal-sheet{width:min(1100px,100%);max-height:95vh;overflow:auto;background:white;border-radius:15px;padding:18px}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:14px;overflow-wrap:anywhere}.modal-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:12px}.modal-tools label{display:flex;gap:8px;align-items:center;font-size:12px}.preview-stage{position:relative;background:#edf1f6;display:flex;justify-content:center;align-items:start;min-height:250px;overflow:auto;padding:10px}.preview-stage img,.preview-stage #pdfCanvas{display:block;max-width:100%;height:auto}.preview-stage iframe{width:100%;height:70vh;border:0}.preview-stage #drawingCanvas{position:absolute;top:10px;left:50%;transform:translateX(-50%);touch-action:none;max-width:calc(100% - 20px);cursor:crosshair}.preview-stage #pdfRender{position:relative;max-width:100%}@media(max-width:720px){.class-hero{padding:23px}.class-hero h1{font-size:23px}.feedback-area{flex-direction:column}.feedback-area textarea{width:100%}.class-tabs button{padding:12px}.modal-backdrop{padding:4px}.modal-sheet{padding:12px}}
+
+/* Student feedback notifications — v0.6 */
+.feedback-bell{border:1px solid var(--line);background:white;color:var(--ink);border-radius:10px;padding:9px 12px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.feedback-bell:hover{border-color:var(--accent);color:var(--accent)}
+.feedback-notice-summary{font-size:13px;color:var(--muted)}
+.feedback-notice{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#f3f5ff;border:1px solid #dce3ff;border-radius:10px;padding:13px 15px;margin-top:10px}
+.feedback-notice b,.feedback-notice small{display:block;font-size:12px}
+.feedback-notice small{color:var(--muted);margin-top:4px}
+@media(max-width:720px){.feedback-bell{padding:8px;font-size:11px}.feedback-notice{align-items:flex-start;flex-direction:column}}
+
+
+/* v0.7 — gradebook submission-review workflow */
+.grade-table td{vertical-align:top}.grade-table th:not(.sticky-student){min-width:175px}
+.grade-cell-stack{display:flex;flex-direction:column;align-items:center;gap:9px;padding:5px 3px}
+.submission-status{font-size:11px;font-weight:750;white-space:nowrap}
+.submission-status.submitted{color:#13805c}.submission-status.missing{color:#9b6871}
+.grade-cell-stack .grade-cell{width:116px;max-width:100%}.read-only-score{font-size:12px}
+.review-trigger{font-size:11px;font-weight:750;color:var(--accent);background:#eef0ff;border:1px solid #d8dcff;border-radius:8px;padding:7px 10px;cursor:pointer}
+.review-trigger:hover,.review-trigger.active{background:#dadfff}
+.grade-review{margin-top:22px;padding:19px;border:1px solid #d8dcf4;background:#fbfcff;border-radius:12px;scroll-margin-top:20px}
+.review-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:17px}
+.review-heading h2{margin:4px 0 8px;font-size:18px}.grade-review h3{font-size:13px;margin:14px 0 8px}
+.review-file{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;background:white;border:1px solid var(--line);border-radius:9px;padding:12px;margin:9px 0}
+.review-file strong,.review-file small{display:block;font-size:12px;overflow-wrap:anywhere}.review-file small{color:var(--muted);margin-top:3px}
+.review-file-actions{display:flex;gap:7px;flex-wrap:wrap}.review-file-actions .btn{padding:8px 11px;font-size:11px}
+.grade-review .field{margin-top:14px}.grade-review textarea{min-height:85px}
+@media(max-width:720px){.review-heading{flex-direction:column}.review-file{align-items:flex-start;flex-direction:column}}
+/* Version 0.8 */
+.panel-title .class-export-btn {margin-left:auto;white-space:nowrap}
+.trend-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:720px}
+.trend-plot{overflow-x:auto;padding:10px 0}
+.trend-svg{display:block;width:100%;height:auto;min-width:430px;max-height:370px}
+@media(max-width:650px){.trend-filters{grid-template-columns:1fr}.panel-title:has(.class-export-btn){flex-wrap:wrap;gap:10px}.class-export-btn{width:100%}}
+
+/* v0.9 categories, final grades */
+.category-weight-row{display:grid;grid-template-columns:minmax(180px,2fr) minmax(110px,1fr) auto;align-items:end;gap:12px;margin-bottom:12px}
+.category-weight-row .btn{margin-bottom:1px}.category-weight-row [disabled]{opacity:.42;cursor:not-allowed}
+.category-total{font-weight:750;padding:12px 15px;border-radius:9px;background:#e7f6ef;color:#176345;margin:10px 0}
+.category-total.invalid{background:#fff0ec;color:#b33124}.category-error{color:#ac2828;font-weight:650;margin:8px 0}
+.category-summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.category-summary span{padding:7px 10px;border:1px solid #dce2f2;background:#f6f8ff;border-radius:8px;font-size:12px}
+.assignment-category-edit{display:flex;align-items:center;gap:10px;margin:13px 0}.assignment-category-edit label{font-size:12px;font-weight:700}.assignment-category-edit select{max-width:245px}
+.final-result{color:#186646;font-size:14px;white-space:nowrap}.provisional-result{font-size:12px;color:#865319;display:block;min-width:115px}.provisional-result small{display:block;margin-top:5px;color:#888}
+.student-grade-summary>strong{font-size:22px}.grade-table th small{display:block;font-size:10px;font-weight:500;color:#667}
+@media(max-width:700px){.category-weight-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.category-weight-row .btn{grid-column:span 2;justify-self:start}}
+
+/* v1.0 criterion editor and semester overview */
+.criterion-picker{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:14px 0}.criterion-picker legend{font-size:13px;font-weight:750;padding:0 6px}.criterion-choices{display:flex;gap:15px;flex-wrap:wrap}.criterion-choices label{display:flex;align-items:center;gap:7px;font-size:13px}.criterion-choices input{width:auto}.criterion-editor{margin:18px 0;background:#f7f9ff;border:1px solid #dbe2f9;border-radius:12px;padding:16px}.criterion-editor h3{margin:0 0 8px}.criterion-fields{display:grid;grid-template-columns:repeat(4,minmax(65px,125px));gap:12px;max-width:560px}.criterion-total{font-size:13px;padding:10px 0}.criterion-inline-error{color:#b42318;font-size:12px;font-weight:700}.criterion-cell-summary{display:block;font-size:11px;color:var(--muted);margin-top:7px}.grade-view-switch{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap}.semester-select{max-width:360px;margin:14px 0}.semester-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 22px}.semester-summary>div{background:#f2f5ff;border:1px solid #dce3fb;border-radius:12px;padding:16px}.semester-summary span,.semester-summary strong{display:block}.semester-summary span{font-size:12px;color:var(--muted)}.semester-summary strong{font-size:24px;margin-top:6px}.semester-chart{display:grid;gap:16px;margin:16px 0 24px}.semester-bar-row{display:grid;grid-template-columns:150px minmax(80px,1fr) 75px;gap:13px;align-items:center;font-size:12px}.semester-bar-row small{display:block;color:var(--muted);margin-top:3px}.semester-track{height:24px;background:#edf0f7;border-radius:6px;overflow:hidden}.semester-fill{height:100%;background:#6979e8;border-radius:6px}.semester-bar-row>strong{text-align:right}.criterion-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0 20px}.criterion-summary-item{border:1px solid var(--line);background:#fafbff;border-radius:10px;padding:12px}.criterion-summary-item span,.criterion-summary-item strong{display:block}.criterion-summary-item span{color:var(--muted);font-size:12px}.criterion-summary-item strong{font-size:18px;margin-top:6px}@media(max-width:700px){.semester-bar-row{grid-template-columns:85px minmax(60px,1fr) 60px;gap:6px}.criterion-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.criterion-fields{grid-template-columns:repeat(2,minmax(70px,1fr))}}
+
+/* v1.1: assessment types, category visibility, semester full roster */
+.assessment-kind-picker{border:1px solid var(--line);border-radius:11px;padding:13px 16px;margin:12px 0 16px}
+.assessment-kind-picker legend{font-size:13px;font-weight:750;padding:0 5px}.required{font-size:11px;color:#aa3a46}
+.assessment-kind-choices{display:flex;gap:12px;flex-wrap:wrap}.assessment-kind-option{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer}.assessment-kind-option:has(input:checked){outline:2px solid #99b4f1}.assessment-kind-option input{accent-color:var(--accent);width:16px;height:16px}
+.assessment-badge,.category-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;line-height:1.2;white-space:nowrap;vertical-align:middle;border:1px solid transparent;letter-spacing:0}
+.assessment-summative{color:#245dba;background:#e7f0ff;border-color:#bdd4ff}.assessment-formative{color:#137650;background:#e5f8ec;border-color:#b5e7ca}.assessment-unset{color:#6b7280;background:#f1f2f4;border-color:#e1e5eb}
+.assign-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;line-height:1.8}.assignment-header{vertical-align:top}.assignment-header-badges{display:flex;flex-direction:column;align-items:flex-start;gap:5px;margin-top:7px}.grade-table .assignment-header small{margin-top:7px}
+.semester-jump{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 24px}.semester-jump label{font-size:12px;font-weight:750}.semester-jump select{min-width:230px}
+.semester-all-students{display:flex;flex-direction:column;gap:20px}.semester-student-card{border:1px solid #dce3ef;border-radius:14px;background:#fff;overflow:hidden;scroll-margin-top:22px}.semester-student-head{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:16px 19px;background:#f8faff;border-bottom:1px solid #e7ecf6}.semester-student-number{font-size:10px;color:var(--muted);font-weight:750}.semester-student-head h3{margin:5px 0 0;font-size:17px}.semester-student-stats{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.semester-student-stats b{color:var(--ink);font-size:15px;display:block;margin-top:3px}.semester-student-body{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;padding:19px}.semester-student-body h4{margin:0 0 12px;font-size:13px}.semester-student-card .semester-chart{margin:0;gap:10px}.semester-student-card .semester-bar-row{grid-template-columns:135px minmax(75px,1fr) 64px;gap:10px}.semester-student-card .semester-track{height:18px}.semester-student-card .criterion-summary-grid{margin:0;gap:7px}.semester-student-card .criterion-summary-item{padding:10px}.semester-comment-area{padding:0 19px 19px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}.semester-comment-area label{font-size:12px;font-weight:750}.semester-comment-area textarea{width:100%;min-height:88px;resize:vertical}.semester-comment-area .btn{align-self:flex-end}
+@media(max-width:1000px){.semester-student-body{grid-template-columns:1fr}}@media(max-width:500px){.semester-student-head,.semester-student-body{padding:13px}.semester-student-card .semester-bar-row{grid-template-columns:95px minmax(50px,1fr) 53px;gap:6px}.semester-student-card .semester-bar-row .category-badge{max-width:95px;white-space:normal}.semester-comment-area{padding:0 13px 13px}}
+
+/* v1.2: neutral assignment header surface, colored badges remain distinct. */
+.grade-table thead th.assignment-header{background:#f8faff;}
+
+/* v1.3: inline gradebook criterion display and in-cell editing. */
+.inline-criterion-summary{display:flex;justify-content:center;flex-wrap:wrap;gap:5px 9px;font-size:10px;color:#56647f;line-height:1.5;max-width:180px}
+.inline-criterion-summary strong{color:#263b69;margin-left:2px}.inline-criterion-summary.muted{color:#98a2b3}
+.grade-table td:has(.inline-grade-review){min-width:360px;max-width:390px;background:#fbfcff}
+.inline-grade-review{width:340px;max-width:100%;text-align:left;margin:5px 0 8px;padding:12px;border:1px solid #dce4f7;border-radius:10px;background:white;white-space:normal;box-shadow:0 3px 12px #24396b0b}
+.inline-grade-review .criterion-editor{margin:0;padding:11px;border-radius:8px}
+.inline-grade-review .criterion-editor h3{font-size:12px}
+.inline-grade-review .criterion-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.inline-grade-review .criterion-fields input{width:100%;min-width:0}
+.inline-grade-review .criterion-editor .mini-note{font-size:11px;line-height:1.55}
+.inline-grade-review .criterion-total{font-size:11px}
+.inline-grade-review .btn{font-size:11px;padding:8px 10px}
+.inline-review-files{border-top:1px solid #e5e9f4;margin-top:12px;padding-top:12px;display:grid;gap:9px;font-size:11px}
+.inline-review-file{padding:9px;border:1px solid var(--line);border-radius:8px;overflow-wrap:anywhere}
+.inline-review-file>span{display:block;margin-bottom:7px;font-weight:600}
+.inline-review-actions{display:flex;flex-wrap:wrap;gap:5px}
+.inline-feedback-label{font-weight:700;font-size:11px}
+.inline-grade-review textarea{width:100%;min-height:78px}
+.inline-grade-review .annotation-result img{max-height:160px}
+@media(max-width:700px){.grade-table td:has(.inline-grade-review){min-width:300px}.inline-grade-review{width:280px}}
+
+/* ================================================================
+   v1.4 — Readability and spacing refresh (CSS only)
+   Larger, calmer typography; more touch-friendly controls;
+   more breathing room without changing existing app behavior.
+   ================================================================ */
+:root { --ui-body-size: 16px; }
+html { font-size: 16px; }
+body { font-size: var(--ui-body-size); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+.sidebar { width: 282px; padding: 29px 17px; }
+.brand { font-size: 23px; }
+.brand small { font-size: 11px; letter-spacing: 1.4px; }
+.school { padding: 14px 12px; gap: 12px; margin-top: 32px; }
+.school-icon { width: 44px; height: 44px; flex-shrink: 0; }
+.school strong, .school small { font-size: 13px; line-height: 1.4; }
+.nav-label { font-size: 12px; margin-top: 33px; margin-bottom: 16px; }
+.nav-item { font-size: 15px; padding: 14px 15px; gap: 13px; margin: 4px 0; border-radius: 11px; }
+.nav-item .glyph { font-size: 21px; width: 25px; }
+.side-footer { font-size: 12px; }
+.topbar { height: 84px; padding: 0 38px; }
+.crumb { font-size: 14px; }
+.role-label, .signed-in-name { font-size: 14px; }
+.avatar { width: 40px; height: 40px; font-size: 13px; }
+main { max-width: 1620px; padding: 34px 36px 48px; }
+.pagehead { margin-bottom: 27px; }
+.pagehead h1 { font-size: 32px; line-height: 1.2; letter-spacing: -.6px; }
+.pagehead p { font-size: 15px; margin-top: 10px; line-height: 1.6; }
+.eyebrow { font-size: 13px; }
+.panel { padding: 27px 28px; margin-bottom: 23px; border-radius: 16px; }
+.panel-title { gap: 14px; flex-wrap: wrap; }
+.panel-title h2 { font-size: 19px; line-height: 1.35; }
+.panel-title small { font-size: 13px; }
+.stat { padding: 26px; }
+.stat-label { font-size: 14px; }
+.stat-value { font-size: 34px; margin-top: 12px; }
+.stat-foot { font-size: 13px; }
+.stats { gap: 20px; margin-bottom: 24px; }
+.two-col { gap: 22px; }
+.btn, .inline-grade-review .btn { font-size: 14px; line-height: 1.35; padding: 11px 16px; min-height: 40px; border-radius: 10px; }
+.text-button, .review-trigger { font-size: 14px; }
+select, input, textarea { font-size: 15px; padding: 12px 14px; min-height: 43px; line-height: 1.45; }
+textarea { line-height: 1.65; }
+.field { gap: 9px; margin-bottom: 17px; }
+.field label { font-size: 14px; }
+.form-row { gap: 17px; }
+.muted, .mini-note, .empty, .notice { font-size: 14px; }
+.mini-note { line-height: 1.75; }
+.notice { padding: 15px 17px; }
+.pill, .assessment-badge, .category-badge { font-size: 13px; padding: 6px 11px; line-height: 1.3; }
+.item { padding: 18px 0; }
+.item strong { font-size: 15px; }
+.item small { font-size: 13px; }
+.time { font-size: 13px; }
+.segment { gap: 9px; margin-bottom: 21px; }
+.segment button { font-size: 14px; padding: 11px 16px; min-height: 41px; }
+th { font-size: 13px; }
+td { font-size: 14px; }
+th, td { padding: 17px 15px; }
+.table-scroll { scrollbar-width: thin; }
+.class-hero { padding: 36px 39px; min-height: 179px; }
+.class-hero h1 { font-size: 34px; }
+.class-hero p { font-size: 15px; }
+.class-tabs { gap: 8px; margin-bottom: 24px; }
+.class-tabs button { font-size: 15px; padding: 15px 18px; }
+.class-card-grid { gap: 21px; }
+.class-card { padding: 26px; gap: 14px; min-height: 235px; }
+.class-card strong { font-size: 19px; }
+.class-card span, .class-card small { font-size: 14px; }
+.post-meta, .assign-meta { font-size: 14px; }
+.post-body { font-size: 15px; line-height: 1.85; }
+.file-tile { padding: 15px; }
+.file-tile strong, .file-tile small { font-size: 14px; }
+.feedback-bell, .feedback-notice-summary { font-size: 14px; }
+.new-count { min-width: 21px; height: 21px; font-size: 12px; }
+.grade-scroll { border-radius: 12px; }
+.grade-table th, .grade-table td { min-width: 155px; padding: 19px 15px; }
+.grade-table thead th { height: auto; min-height: 108px; max-width: 235px; }
+.grade-table .sticky-student { min-width: 205px; }
+.grade-table th small, .grade-table .assignment-header small { font-size: 12px; line-height: 1.55; }
+.grade-table .assignment-header-badges { gap: 7px; margin-top: 9px; }
+.grade-cell { width: 106px; padding: 11px 9px; font-size: 15px; }
+.category-summary { gap: 10px; margin-bottom: 19px; }
+.category-summary span { font-size: 14px; padding: 9px 12px; }
+.inline-criterion-summary { font-size: 13px; line-height: 1.65; gap: 6px 12px; max-width: 215px; }
+.criterion-cell-summary, .submission-status, .read-only-score { font-size: 13px; }
+.grade-table td:has(.inline-grade-review) { min-width: 400px; max-width: 445px; }
+.inline-grade-review { width: 385px; padding: 17px; border-radius: 12px; }
+.inline-grade-review .criterion-editor { padding: 14px; }
+.inline-grade-review .criterion-editor h3 { font-size: 16px; }
+.inline-grade-review .criterion-editor .mini-note, .inline-grade-review .criterion-total { font-size: 13px; }
+.inline-review-files { font-size: 13px; gap: 11px; margin-top: 15px; padding-top: 15px; }
+.inline-review-file { padding: 12px; }
+.inline-review-actions { gap: 8px; }
+.inline-feedback-label { font-size: 14px; }
+.inline-grade-review textarea { min-height: 105px; }
+.attendance-choice { gap: 7px; }
+.attendance-choice button { font-size: 13px; padding: 10px 13px; min-height: 39px; }
+.submission-summary, .submission-row, .provisional-result { font-size: 14px; }
+.provisional-result small { font-size: 12px; }
+.final-result { font-size: 16px; }
+.semester-jump { margin: 21px 0 25px; }
+.semester-jump label { font-size: 14px; }
+.semester-all-students { gap: 24px; }
+.semester-bar-row { font-size: 14px; }
+.semester-student-stats { font-size: 14px; }
+.semester-student-number { font-size: 12px; }
+.criterion-picker legend, .assessment-kind-picker legend { font-size: 15px; }
+.assessment-kind-option { padding: 13px 17px; }
+.category-weight-row { gap: 15px; }
+.category-total, .category-error { font-size: 15px; }
+.login-card { width: min(100%,490px); padding: 42px; }
+.login-heading { font-size: 21px; }
+.login-heading small { font-size: 11px; }
+.login-copy h1 { font-size: 34px; }
+.login-copy p { font-size: 15px; }
+.login-submit { font-size: 16px; }
+.login-error, .login-disclaimer { font-size: 13px; }
+.toast { font-size: 14px; }
+/* Preserve usability on smaller screens despite increased scale. */
+@media (max-width: 1100px) {
+  main { padding: 27px 25px 38px; }
+  .topbar { padding: 0 25px; }
+  .panel { padding: 23px; }
+}
+@media (max-width: 720px) {
+  .sidebar { left: -310px; width: 282px; }
+  .sidebar.open { left: 0; }
+  .topbar { height: 71px; padding: 0 16px; }
+  main { padding: 22px 15px 34px; }
+  .pagehead h1 { font-size: 27px; }
+  .panel { padding: 19px 16px; }
+  .stat { padding: 19px; }
+  .stat-value { font-size: 27px; }
+  .class-hero { padding: 27px 22px; min-height: 145px; }
+  .class-hero h1 { font-size: 28px; }
+  .class-tabs button { padding: 13px 15px; font-size: 14px; }
+  .grade-table .sticky-student { min-width: 145px; }
+  .grade-table th, .grade-table td { padding: 14px 12px; }
+  .grade-table td:has(.inline-grade-review) { min-width: 315px; }
+  .inline-grade-review { width: 296px; padding: 12px; }
+  .login-card { padding: 27px; }
+  .login-copy h1 { font-size: 30px; }
+  .semester-student-body, .semester-student-head { padding: 17px; }
+}
+@media (max-width: 400px) {
+  .btn, .inline-grade-review .btn { padding: 10px 12px; }
+  .stats { gap: 11px; }
+}
+
+/* Coordinator risk register */
+.risk-filters{display:grid;grid-template-columns:repeat(4,minmax(145px,1fr));gap:18px;align-items:end}
+.risk-filters .field{min-width:0}
+.risk-filters select{width:100%}
+.risk-stats{margin:18px 0}
+.risk-grade{display:inline-flex;padding:5px 10px;border-radius:999px;color:#b42336;background:#fff1f1;border:1px solid #ffc9ce;font-weight:800}
+.risk-table td,.risk-table th{padding:16px 18px}
+.risk-empty{padding:22px 4px;color:#46516a}.risk-empty p{margin-top:8px;color:#748093}
+@media(max-width:900px){.risk-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.risk-filters{grid-template-columns:1fr}}
+
+/* Coordinator report selection (v1.7) */
+.report-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:18px 0 25px}
+.report-student-heading{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:16px 0}
+.report-student-heading .btn{margin-left:5px}
+.report-student-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;max-height:420px;overflow-y:auto;padding:6px}
+.report-student{border:1px solid #dce3f0;border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;background:white}
+.report-student:has(input:checked){background:#f0f3ff;border-color:#6579dc}
+.report-student input{width:19px;height:19px;accent-color:#5367df}
+.report-student span{display:flex;flex-direction:column;gap:4px}
+.report-student small{color:#687793;font-size:12px}
+.report-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:22px;border-top:1px solid #e0e6f0;padding-top:22px}
+@media(max-width:700px){.report-filters{grid-template-columns:1fr}.report-student-heading{align-items:start;flex-direction:column}}
+
+/* v2.3 shared active semester */
+.period-indicator{display:inline-flex;margin-left:12px;padding:5px 9px;border-radius:8px;background:#eef2ff;color:#4057b0;font-size:12px;font-weight:700;white-space:nowrap}
+@media(max-width:720px){.period-indicator{display:block;margin:6px 0 0;width:max-content}}
+
+/* Administrator user/class assignment controls */
+.account-class-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0 14px}
+.account-class{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid #dce3f2;border-radius:10px;background:#f8faff;cursor:pointer;font-size:14px}
+.account-class input{width:18px;height:18px;accent-color:#536af1;flex:none}
+.account-class small{display:block;color:#6f7892;font-size:12px}

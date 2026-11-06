@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Management | Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="login-screen" id="loginScreen" aria-labelledby="loginTitle">
+    <div class="login-card">
+      <div class="login-heading"><span class="brand-mark">✦</span><div><strong>School Management</strong><small>ACADEMIC PORTAL</small></div></div>
+      <div class="login-copy"><span class="eyebrow">NORTHBRIDGE ACADEMY</span><h1 id="loginTitle">Welcome back</h1><p>Sign in to access your school dashboard.</p></div>
+      <form id="loginForm" autocomplete="off">
+        <div class="field"><label for="loginUsername">Username</label><input id="loginUsername" name="username" placeholder="Enter username" autocomplete="username" required /></div>
+        <div class="field"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" placeholder="Enter password" autocomplete="current-password" required /></div>
+        <p class="login-error" id="loginError" role="alert" hidden>Incorrect username or password.</p>
+        <button class="btn login-submit" type="submit">Sign in →</button>
+      </form>
+      <p class="login-disclaimer">Offline demonstration · Fictional data only · Demo passwords are not secure</p>
+    </div>
+  </section>
+  <div class="app" id="appShell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a href="#dashboard" class="brand"><span class="brand-mark">✦</span><span>School Management<small>PROTOTYPE</small></span></a>
+      <div class="school"><div class="school-icon">N</div><div><strong>Northbridge Academy</strong><small>Demo school</small></div></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="side-footer"><span class="status-dot"></span> Offline browser demo · Fictional data</div>
+    </aside>
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="crumb">Northbridge Academy <span>/</span> <strong id="crumbPage">Overview</strong></div>
+        <div class="top-actions"><button id="feedbackBell" type="button" class="feedback-bell" hidden aria-label="Feedback notifications">🔔 Feedback</button><span id="signedInName" class="signed-in-name"></span><div class="avatar" id="avatar">MH</div><button class="btn secondary logout-button" id="logoutButton" type="button">Log out</button></div>
+      </header>
+      <main id="content" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="browser-demo-api.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" async></script>
+  <script src="grading.js" defer></script>
+  <script src="criteria.js" defer></script>
+  <script src="classroom.js" defer></script>
+  <script src="enhancements.js" defer></script>
+  <script src="historical.js" defer></script>
+  
+  <script src="risk.js" defer></script>
+  <script src="reports.js" defer></script>
+  <script src="semester.js" defer></script>
+</body>
+</html>

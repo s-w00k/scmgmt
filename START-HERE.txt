@@ -1,0 +1,38 @@
+SCHOOL MANAGEMENT — BROWSER-ONLY DEMO
+====================================
+
+1. Extract the ZIP completely.
+2. Open the extracted folder.
+3. Double-click index.html (Chrome or Edge recommended).
+4. Sign in with one of the following fictional demo accounts:
+
+   Administrator:  schooladministrator / 123456
+   Coordinator:    schoolcoordinator   / 123456
+   Teacher:        schoolteacher         / 123456
+   Student:        alexstudent          / 123456
+
+NO INSTALLATION, MYSQL, NODE.JS, POWERSHELL OR INTERNET CONNECTION IS
+NEEDED FOR THE CORE DEMO.
+
+DEMO MODULES
+- Four role-based dashboards and class workspaces
+- Gradebook, grading categories, criteria, formative/summative types
+- Attendance, class posts, file storage, student submissions
+- Coordinator trends, at-risk register and printable report-card previews
+- Administrator user accounts, role/class assignments, active semester
+
+IMPORTANT LIMITATIONS
+- Accounts and settings are stored locally in your browser, not on a server.
+- Account passwords are demo-only and not secure. Do not enter real student data.
+- Historical grades and risk records are simulated fictional examples, NOT
+  transferred from the MySQL database you built earlier.
+- Changes on one computer will NOT appear on another computer.
+- File uploads/annotations use browser-local IndexedDB and may be limited by
+  browser settings or storage limits. PDF annotation needs the PDF.js script
+  loaded from the internet; image annotations can work without it.
+- Reports open a new browser tab: allow pop-ups when requested, then use
+  Print > Save as PDF.
+- If your browser blocks local-file storage, try Chrome or Edge in a standard
+  browsing window (not private/incognito).
+
+For a live multi-device school system, use the separate MySQL/Node.js build.
